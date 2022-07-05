@@ -1,0 +1,34 @@
+[debug] [2022-07-05T11:31:42.149Z] ----------------------------------------------------------------------
+[debug] [2022-07-05T11:31:42.150Z] Command:       D:\Program Files\nodejs\node.exe C:\Users\soham\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2022-07-05T11:31:42.151Z] CLI Version:   11.2.0
+[debug] [2022-07-05T11:31:42.151Z] Platform:      win32
+[debug] [2022-07-05T11:31:42.151Z] Node Version:  v16.14.0
+[debug] [2022-07-05T11:31:42.152Z] Time:          Tue Jul 05 2022 17:01:42 GMT+0530 (India Standard Time)
+[debug] [2022-07-05T11:31:42.152Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-05T11:31:42.214Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-05T11:31:42.214Z] > authorizing via signed-in user (sohamddixit@gmail.com)
+[debug] [2022-07-05T11:31:42.214Z] [iam] checking project wallet-ecommerce-vue-74995 for permissions ["firebase.projects.get"]
+[debug] [2022-07-05T11:31:42.216Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/wallet-ecommerce-vue-74995:testIamPermissions [none]
+[debug] [2022-07-05T11:31:42.217Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/wallet-ecommerce-vue-74995:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-07-05T11:31:43.629Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/wallet-ecommerce-vue-74995:testIamPermissions 200
+[debug] [2022-07-05T11:31:43.629Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/wallet-ecommerce-vue-74995:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-07-05T11:31:43.631Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/wallet-ecommerce-vue-74995 [none]
+[debug] [2022-07-05T11:31:44.035Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/wallet-ecommerce-vue-74995 200
+[debug] [2022-07-05T11:31:44.035Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/wallet-ecommerce-vue-74995 {"projectId":"wallet-ecommerce-vue-74995","projectNumber":"800449571726","displayName":"wallet ecommerce vuejs","name":"projects/wallet-ecommerce-vue-74995","resources":{"hostingSite":"wallet-ecommerce-vue-74995"},"state":"ACTIVE"}
+[info] 
+[info] === Serving from 'C:\Users\soham\Desktop\ecommerce-site-vuejs-main'...
+[info] 
+[debug] [2022-07-05T11:31:44.037Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/wallet-ecommerce-vue-74995/sites 
+[debug] [2022-07-05T11:31:44.499Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/wallet-ecommerce-vue-74995/sites 200
+[debug] [2022-07-05T11:31:44.499Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/wallet-ecommerce-vue-74995/sites {"sites":[{"name":"projects/wallet-ecommerce-vue-74995/sites/wallet-ecommerce-vue-74995","defaultUrl":"https://wallet-ecommerce-vue-74995.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-07-05T11:31:44.499Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/wallet-ecommerce-vue-74995/webApps/-/config [none]
+[debug] [2022-07-05T11:31:45.215Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/wallet-ecommerce-vue-74995/webApps/-/config 403
+[debug] [2022-07-05T11:31:45.215Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/wallet-ecommerce-vue-74995/webApps/-/config {"error":{"code":403,"message":"Project '800449571726' not found or permission denied.\ncom.google.api.tenant.error.TenantManagerException: Project '800449571726' not found or permission denied.","status":"PERMISSION_DENIED"}}
+[debug] [2022-07-05T11:31:45.216Z] fetchWebSetup error: FirebaseError: HTTP Error: 403, Project '800449571726' not found or permission denied.
+com.google.api.tenant.error.TenantManagerException: Project '800449571726' not found or permission denied.
+[warn] !  hosting: Authentication error when trying to fetch your current web app configuration, have you run firebase login? 
+[warn] !  hosting: Using web app configuration from cache. 
+[info] i  hosting: Serving hosting files from: dist {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mdist\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [05/Jul/2022:11:32:28 +0000] "GET / HTTP/1.1" 200 793 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [05/Jul/2022:11:32:28 +0000] \"GET / HTTP/1.1\" 200 793 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36\""}}
